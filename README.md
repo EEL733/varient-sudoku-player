@@ -1,4 +1,5 @@
 # バリアント数独プレイヤー
 
-pzprjs をベースにバリアント数独用のプレイヤーを色々作る予定<br>
-基本的には個人用
+pzprjs をベースに作成するバリアント数独用のプレイヤー(個人用)
+
+This project is a fork of the original [sabo2/pzprjs] and [robx/pzprjs];

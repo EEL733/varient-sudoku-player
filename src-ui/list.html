@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META CHARSET="utf-8">
+<meta http-equiv="Content-Type" content="text/html">
+<TITLE>puzz.link list of puzzle types</TITLE>
+<link rel="stylesheet" href="./css/list.css?<%= git.hash %>">
+<script src="./js/pzpr.js?<%= git.hash %>"></script>
+<script src="./js/list.js?<%= git.hash %>"></script>
+</HEAD>
+<BODY>
+
+<div class=main id=main>
+
+<h2 id="title"><span lang="ja">パズルの種類のリスト</span><span lang="en">List of puzzle types</span></h2>
+
+<div id="design1">
+
+  <menu class="selector" id="puzmenu">
+    <li class="puzmenusel" id='puzsort_none' data-sort='none'>
+      <span lang="ja">日付順</span><span lang="en">Sort by date</span>
+    </li><li class="puzmenu" id='puzsort_alpha' data-sort='alpha'>
+      <span lang="ja">アルファベット順</span><span lang="en">Sort alphabetically</span>
+   </menu>
+
+<br clear="all">
+
+<div class="puztable" id="table_all">
+  <div class='container'>
+    <div class="lists">
+      <ul>
+        <li data-pid="sudoku"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ////////////////////////////////////////////////////////////////////// -->
+
+</div><!-- <div id="design1"> -->
+
+</div>
+
+</BODY>
+</HTML>
