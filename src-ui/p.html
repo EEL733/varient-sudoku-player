@@ -553,16 +553,7 @@ if ('serviceWorker' in navigator) {
     <form name="newboard">
       <span>__newboard.header__</span>
       <br>
-      <div id="nb_size" data-disp-pid="!sudoku">
-        <span id="nb_cols" data-disp-pid="!tawa">__newboard.cols__</span>
-        <input type="number" name="col" value="1" size=4 maxlength=3 min=1 max=999>
-        <span id="nb_cols_tawa" data-disp-pid="tawa">__newboard.tawa.width__</span>
-        <br>
-        <span id="nb_rows" data-disp-pid="!tawa">__newboard.rows__</span>
-        <input type="number" name="row" value="1" size=4 maxlength=3 min=1 max=999>
-        <span id="nb_rows_tawa" data-disp-pid="tawa">__newboard.tawa.height__</span>
-      </div>
-      <div id="nb_size_sudoku" data-disp-pid="sudoku">
+      <div id="nb_size">
         <input type="radio" name="size" id="nb_size_sudoku_0" value="0"> 4x4<br>
         <input type="radio" name="size" id="nb_size_sudoku_4" value="4"> 6x6<br>
         <input type="radio" name="size" id="nb_size_sudoku_1" value="1" checked> 9x9<br>
@@ -574,12 +565,6 @@ if ('serviceWorker' in navigator) {
         <select id="nb_piecebank_preset" name="preset"></select>
       </div>
       <br>
-      <table id="nb_shape_tawa" data-disp-pid="tawa" border=0 cell-padding=0 cell-spaceing=2><tr>
-        <td><div id="nb_shape_0"><img src="" data-button-exec="clickshape"></div></td>
-        <td><div id="nb_shape_1"><img src="" data-button-exec="clickshape"></div></td>
-        <td><div id="nb_shape_2"><img src="" data-button-exec="clickshape"></div></td>
-        <td><div id="nb_shape_3"><img src="" data-button-exec="clickshape"></div></td>
-      </tr></table>
       <button type="button" class="btn btn-ok" data-button-exec="execute">__newboard.submit__</button>
       <button type="button" class="btn" data-button-exec="close">__cancel__</button>
     </form>

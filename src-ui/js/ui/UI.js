@@ -150,38 +150,8 @@ window.ui = {
 		var puzzle = ui.puzzle,
 			padding = 0;
 		switch (puzzle.pid) {
-			case "firefly":
-			case "hashikake":
-			case "wblink":
-			case "ichimaga":
-			case "ichimagam":
-			case "ichimagax":
-				padding = 0.3;
-				break;
-
-			case "kouchoku":
-			case "gokigen":
-			case "wagiri":
-			case "creek":
-				padding = 0.2;
-				break;
-
-			case "slither":
-			case "cave":
-			case "mejilink":
-				padding = 0.15;
-				break;
-
-			case "kinkonkan":
-			case "skyscrapers":
-			case "easyasabc":
-			case "japanesesums":
-			case "box":
+			case "skyscraperssudoku":
 				padding = 0.05;
-				break;
-
-			case "bosanowa":
-				padding = ui.menuconfig.get("disptype_bosanowa") !== 2 ? 0.5 : 0.05;
 				break;
 
 			default:

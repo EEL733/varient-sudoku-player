@@ -1,5 +1,9 @@
 {
+    "complete": "Complete!",
     "bkDupNum": "There are equal numbers in a block.",
     "nmDupRow": "There are equal numbers in a row or column.",
-    "ceNoNum": "There is an empty cell."
+    "ceNoNum": "There is an empty cell.",
+    "nmSightNe": "The number of visible buildings is wrong.",
+    "nmXYNe": "そのマスから見てX番目にYか、Y番目にXがありません。",
+    "nmFrameSumNe": "そのマスから見て太線までの数字の和が正しくありません。"
 }

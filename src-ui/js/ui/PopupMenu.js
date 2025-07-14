@@ -270,18 +270,7 @@ ui.popupmgr.addpopup("newboard", {
 	show: function(px, py) {
 		ui.popupmgr.popups.template.show.call(this, px, py);
 		ui.puzzle.key.enableKey = false;
-
-		switch (ui.puzzle.pid) {
-			case "sudoku":
-				this.setsize_sudoku();
-				break;
-			case "tawa":
-				this.setsize_tawa();
-				break;
-			default:
-				this.setsize();
-				break;
-		}
+		this.setsize_sudoku();
 	},
 
 	//---------------------------------------------------------------------------
@@ -433,18 +422,7 @@ ui.popupmgr.addpopup("newboard", {
 	//---------------------------------------------------------------------------
 	execute: function() {
 		var pid = ui.puzzle.pid;
-		var obj;
-		switch (pid) {
-			case "sudoku":
-				obj = this.getsize_sudoku();
-				break;
-			case "tawa":
-				obj = this.getsize_tawa();
-				break;
-			default:
-				obj = this.getsize();
-				break;
-		}
+		var obj = this.getsize_sudoku();
 
 		this.close();
 		if (!!obj) {

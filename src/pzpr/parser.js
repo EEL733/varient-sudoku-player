@@ -292,15 +292,7 @@
 
 			/* サイズを表す文字列 */
 			if (this.type === URL_KANPEN) {
-				if (this.pid === "kakuro") {
-					row = +inp.shift() - 1;
-					col = +inp.shift() - 1;
-				} else if (this.pid === "sudoku") {
-					row = col = +inp.shift();
-				} else {
-					row = +inp.shift();
-					col = +inp.shift();
-				}
+				row = col = +inp.shift();
 			} else if (this.type === URL_HEYAAPP) {
 				var size = inp.shift().split("x");
 				col = +size[0];
@@ -340,15 +332,7 @@
 
 			/* サイズを表す文字列 */
 			if (pzl.type === URL_KANPEN) {
-				if (pzl.pid === "kakuro") {
-					out.push(row + 1);
-					out.push(col + 1);
-				} else if (pzl.pid === "sudoku") {
-					out.push(col);
-				} else {
-					out.push(row);
-					out.push(col);
-				}
+				out.push(col);
 			} else if (pzl.type === URL_HEYAAPP) {
 				out.push([col, row].join("x"));
 			} else if (pzl.type !== URL_PZPRFILE) {
@@ -557,22 +541,7 @@
 			delete this.qdata;
 
 			/* サイズを表す文字列 */
-			if (this.type === FILE_PBOX_XML) {
-				row = +this.body.querySelector("size").getAttribute("row");
-				col = +this.body.querySelector("size").getAttribute("col");
-				if (this.pid === "slither" || this.pid === "kakuro") {
-					row--;
-					col--;
-				}
-			} else if (this.type === FILE_PBOX && this.pid === "kakuro") {
-				row = +lines.shift() - 1;
-				col = +lines.shift() - 1;
-			} else if (this.pid === "sudoku") {
-				row = col = +lines.shift();
-			} else {
-				row = +lines.shift();
-				col = +lines.shift();
-			}
+			row = col = +lines.shift();
 			if (row <= 0 || col <= 0) {
 				return false;
 			}
@@ -659,33 +628,14 @@
 		outputFileData: function() {
 			var pzl = this,
 				col = pzl.cols,
-				row = pzl.rows,
+				// 使っていないので一時コメントアウト
+				// row = pzl.rows,
 				out = [];
 			var puzzlenode =
 				this.type === FILE_PBOX_XML ? this.body.querySelector("puzzle") : null;
 
 			/* サイズを表す文字列 */
-			if (pzl.type === FILE_PBOX_XML) {
-				var sizenode = puzzlenode.querySelector("size");
-				if (sizenode) {
-					puzzlenode.removeChild(sizenode);
-				}
-				if (pzl.pid === "slither" || pzl.pid === "kakuro") {
-					row++;
-					col++;
-				}
-				puzzlenode.appendChild(
-					this.createXMLNode("size", { row: row, col: col })
-				);
-			} else if (pzl.type === FILE_PBOX && pzl.pid === "kakuro") {
-				out.push(row + 1);
-				out.push(col + 1);
-			} else if (pzl.pid === "sudoku") {
-				out.push(col);
-			} else {
-				out.push(row);
-				out.push(col);
-			}
+			out.push(col);
 
 			/* サイズ以降のデータを設定 */
 			if (pzl.type !== FILE_PBOX_XML) {

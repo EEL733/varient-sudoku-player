@@ -83,7 +83,22 @@
 			_list.push(pzprid);
 		},
 		{
-			sudoku: [0, 1, "数独", "Sudoku"]
+			sudoku: [0, 0, "数独", "Sudoku"],
+			nonconsecutivesudoku: [
+				0,
+				0,
+				"NonConsecutive Sudoku",
+				"NonConsecutive Sudoku"
+			],
+			skyscraperssudoku: [0, 0, "Skyscrapers Sudoku", "Skyscrapers Sudoku"],
+			descriptivepairssudoku: [
+				0,
+				0,
+				"Descriptive Pairs Sudoku",
+				"Descriptive Pairs Sudoku"
+			],
+			framesudoku: [0, 0, "Frame Sudoku", "Frame Sudoku"],
+			xsumssudoku: [0, 0, "X-Sums Sudoku", "X-Sums Sudoku"]
 		}
 	);
 })();
