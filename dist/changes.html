@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html">
+
+<script type="text/javascript">
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      for(let registration of registrations) {
+        registration.unregister()
+      }
+    })
+  });
+}
+</script>
+
+<title>pzprjs changes</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0 0 0 16px;
+  }
+</style>
+</head>
+<body>
+<main>
+<div style="margin-bottom: 5px;"><b>Latest types</b> (<em><a href="/list.html" target="_parent">all types</a></em>)</div>
+<ul>
+  <li><a href="/p?arrowflow" target="_parent">Arrow Flow アローフロー</a></li>
+  <li><a href="/p?retsurin" target="_parent">Retsurin</a></li>
+  <li><a href="/p?japanesesums" target="_parent">Japanese Sums</a></li>
+  <li><a href="/p?dotchi2" target="_parent">Dotchi Dotchi Loop ドッチドッチループ</a></li>
+  <li><a href="/p?yajirushi" target="_parent">Yajirushi 見つめあう矢印</a></li>
+  <li><a href="/p?tjunction" target="_parent">T-Junction</a></li>
+  <li><a href="/p?recoil" target="_parent">Recoil</a></li>
+</ul>
+</main>
+</body>

@@ -1,0 +1,1 @@
+{"version":3,"file":"lookouts.js","sources":["lookouts.js"],"names":["ui","debug","addRules","rules","history","addDebugData","url","failcheck","inputs"],"mappings":";;AAEAA,GAAGC,MAAMC,SAAS,WAAW,CAAC,CAACC,MAAM,ibAAibC,QAAQ,4CAA4C,CAACD,MAAM,wLAAwLC,QAAQ,qBAAqBJ,GAAGC,MAAMI,aAAa,WAAW,CAACC,IAAI,qCAAqCC,UAAU,CAAC,CAAC,KAAK,qQAAqQC,OAAO"}
