@@ -19,11 +19,11 @@ ui.keypopup = {
 	clearflag: false,
 
 	/* どの文字配置を作成するかのテーブル */
-	type: {
-		sudoku: [10, 10],
-		nonconsecutivesudoku: [10, 10],
-		skyscraperssudoku: [10, 10]
-	},
+	// type: {
+	// 	sudoku: [10, 10],
+	// 	nonconsecutivesudoku: [10, 10],
+	// 	skyscraperssudoku: [10, 10]
+	// },
 
 	//---------------------------------------------------------------------------
 	// kp.display()     キーポップアップを表示する
@@ -56,18 +56,10 @@ ui.keypopup = {
 
 		this.imgs = []; // resize用
 
-		var type = this.type[ui.puzzle.pid];
+		//		var type = this.type[ui.puzzle.pid];
+		var type = [10, 10];
 		if (!type) {
 			type = [0, 0];
-		}
-
-		/* Change maximum number for Fillomino variant */
-		if (
-			ui.puzzle.playeronly &&
-			ui.puzzle.pid === "fillomino" &&
-			ui.puzzle.getConfig("fillomino_tri")
-		) {
-			type = [3, 3];
 		}
 
 		this.paneltype = { 1: !ui.puzzle.playeronly ? type[0] : 0, 3: type[1] };

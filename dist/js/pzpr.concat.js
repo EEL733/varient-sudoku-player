@@ -1,7 +1,7 @@
 /*!
  * @license
  *
- * pzpr.js v63f82a3
+ * pzpr.js v8b9d45c
  *  https://github.com/sabo2/pzprv3
  *
  * This script includes candle.js, see below
@@ -12,7 +12,7 @@
  * This script is released under the MIT license. Please see below.
  *  http://www.opensource.org/licenses/mit-license.php
  *
- * Date: 2025-07-14
+ * Date: 2025-07-15
  */
 // intro.js
 
@@ -25,7 +25,7 @@
 //---------------------------------------------------------------------------
 /* extern */
 var pzpr = {
-	version: "63f82a3"
+	version: "8b9d45c"
 };
 
 if (typeof module === "object" && module.exports) {

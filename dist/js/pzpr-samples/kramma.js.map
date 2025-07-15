@@ -1,1 +1,0 @@
-{"version":3,"file":"kramma.js","sources":["kramma.js"],"names":["ui","debug","addRules","rules","history","addDebugData","url","failcheck","inputs"],"mappings":";;AAEAA,GAAGC,MAAMC,SAAS,SAAS,CAAC,CAACC,MAAM,wRAAwRC,QAAQ,sEAAsE,CAACD,MAAM,sIAAsIC,QAAQ,wBAAwBJ,GAAGC,MAAMI,aAAa,SAAS,CAACC,IAAI,kBAAkBC,UAAU,CAAC,CAAC,UAAU,yPAAyP,CAAC,UAAU,yPAAyP,CAAC,KAAK,sQAAsQC,OAAO"}
